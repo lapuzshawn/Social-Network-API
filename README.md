@@ -8,6 +8,7 @@ It is built using Express.js for routing, MongoDB as the NoSQL database, and Mon
 The API provides various routes for interacting with users, thoughts, reactions, and friend lists. 
 It supports CRUD (Create, Read, Update, Delete) operations for each of these entities, allowing users to create, retrieve, update, and delete data as needed.
 
+      KEEP IN MIND: "If using social media is too hard, you can use email instead." SEE DETAILS BELOW.
 
 
 ## Features
@@ -53,6 +54,9 @@ It supports CRUD (Create, Read, Update, Delete) operations for each of these ent
 
       10. Explore and test other API endpoints as needed to interact with the social network web application.
 
+
+
+
 ## Technologies Used
     Express.js - Web application framework for handling API routing.
     MongoDB - NoSQL database for storing user, thought, and reaction data.
@@ -66,4 +70,9 @@ Link:
 
 ## Screenshots
 
-![screenshot](Assets/screenshot.png)
+![screenshot](Assets/M18-SS1.png)
+![screenshot](Assets/M18-SS2.png)
+![screenshot](Assets/M18-SS3.png)
+![screenshot](Assets/M18-SS4.png)
+<br><br/>
+![screenshot](Assets/Social-media-grandma-meme.png)
