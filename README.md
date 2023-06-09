@@ -66,7 +66,10 @@ It supports CRUD (Create, Read, Update, Delete) operations for each of these ent
 
 ## Video Demo
 
-Link: 
+[User Demo](https://drive.google.com/file/d/1E6OYRoUZPjAYsFABABGW9NIN-iC09V0h/view?usp=sharing)
+
+[Thoughts Demo](https://drive.google.com/file/d/1oVeeifAVy7ctOquJ70zkyfPQTOtM07Sr/view?usp=sharing)
+
 
 ## Screenshots
 
