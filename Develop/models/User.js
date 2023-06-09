@@ -1,24 +1,26 @@
 // models/User.js
 const mongoose = require('mongoose');
+const Thought = require('./Thought')
 
 const userSchema = new mongoose.Schema({
-  username: {
+  username: { // needs to be unique/required/trimmed
     type: String,
-    unique: true,
+    unique: true, 
     required: true,
     trim: true,
   },
-  email: {
+  email: { // needs to be unique/required/trimmed & Mongoose's matching validation
     type: String,
     required: true,
     unique: true,
-    match: [/^\S+@\S+\.\S+$/, 'Please enter a valid email address'],
+    match: [/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g, 
+    'Please use a valid email'],
   },
-  thoughts: [{
+  thoughts: [{ //Array of _id values referencing the Thought model
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Thought',
   }],
-  friends: [{
+  friends: [{ //Array of _id values referencing the User model (self-reference)
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
   }],
@@ -30,6 +32,7 @@ const userSchema = new mongoose.Schema({
   id: false,
 });
 
+// Virtual for user's friends count
 userSchema.virtual('friendCount').get(function () {
   return this.friends.length;
 });
